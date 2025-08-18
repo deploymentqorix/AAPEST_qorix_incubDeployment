@@ -80,3 +80,59 @@ Press ENTER to continue...
 - Logging framework for detailed traceability.  
 - Configurable polling cycle delay.  
 - Docker containerization for easy deployment.  
+
+## Structure 
+project_extracted/
+    AAPEST_qorix_incubDeployment-main/
+        README.md
+        configuration/
+            diagnostic_manager_manifest.arxml
+            execution_manifest.arxml
+            extended_vehicle_manifest.arxml
+            health_monitoring_manifest.arxml
+        doc/
+            doxygen.conf
+            simulation_flow_diagram.drawio
+            simulation_flow_diagram.png
+        src/
+            main.cpp
+            application/
+                extended_vehicle.cpp
+                extended_vehicle.h
+                doip/
+                    diag_message_handler.cpp
+                    diag_message_handler.h
+                    doip_client.cpp
+                    doip_client.h
+                    doip_server.cpp
+                    doip_server.h
+                    obd_to_doip_converter.cpp
+                    obd_to_doip_converter.h
+                    vehicle_id_request_handler.cpp
+                    vehicle_id_request_handler.h
+                helper/
+                    argument_configuration.cpp
+                    argument_configuration.h
+                    curl_wrapper.cpp
+                    curl_wrapper.h
+                    fifo_checkpoint_communicator.cpp
+                    fifo_checkpoint_communicator.h
+                    log_recovery_action.cpp
+                    log_recovery_action.h
+                    memory_cache.h
+                    network_configuration.cpp
+                    network_configuration.h
+                    read_data_by_identifier.cpp
+                    read_data_by_identifier.h
+                    rpc_configuration.cpp
+                    rpc_configuration.h
+                platform/
+                    diagnostic_manager.cpp
+                    diagnostic_manager.h
+                    execution_management.cpp
+                    execution_management.h
+                    platform_health_management.cpp
+                    platform_health_management.h
+                    state_management.cpp
+                    state_management.h
+
